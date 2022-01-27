@@ -1,4 +1,4 @@
-package com.giko.crm;
+package com.giko.crm.controller;
 
 import com.giko.crm.model.Customer;
 import com.giko.crm.service.CustomerService;
@@ -10,11 +10,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/customer")
-public class CustomerResource {
+public class CustomerController {
 
     private final CustomerService customerService;
 
-    public CustomerResource(CustomerService customerService){
+    public CustomerController(CustomerService customerService){
         this.customerService = customerService;
     }
 
